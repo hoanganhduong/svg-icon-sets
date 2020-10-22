@@ -16,6 +16,7 @@ html {
 
 body {
   margin: 0;
+  padding: 1rem;
 }
 
 h1 {
@@ -32,10 +33,37 @@ a {
   text-decoration: none;
   color: #fff;
   border: solid #fff .2rem;
-  padding: .5rem;
+  padding: 1rem;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ff9500;
+  background-color: #fff;
 }
 
 .icon {
   position: relative;
   height: 8rem;
+  width: 8rem;
+}
+
+.icon svg {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  fill: currentColor;
+}
+
+@media only screen and (min-width: 38em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0;
+    padding: 6vmin;
+    grid-gap: 6vmin;
+  }
 }
