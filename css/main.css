@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  padding-top: 1rem;
+  padding-top: 1.125rem;
   margin: 0;
 }
 
@@ -32,11 +32,17 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
+}
+
+h2 {
+  margin: .5rem 0;
 }
 
 p {
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  font-size: 1rem;
 }
 
 a {
@@ -56,7 +62,7 @@ a {
   position: relative;
   width: 8em;
   height: 8em;
-  margin: 0 0 .5rem;
+  margin: 0 0 1rem;
 }
 
 .icon svg {
@@ -74,13 +80,29 @@ a {
     padding-top: 2rem;
   }
 
+  h1 {
+    padding: inherit;
+  }
+
+  .icon {
+    margin: 0;
+  }
+
+  section {
+    padding: 0;
+  }
+
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    margin: 0;
     padding: 6vmin;
     grid-gap: 6vmin;
+  }
+
+  p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
 }
